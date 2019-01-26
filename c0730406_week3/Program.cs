@@ -25,8 +25,11 @@ namespace c0730406_week3
     }
     class Village
     {
-        Village Previosvillage;
+        Village PreviosVillage;
         Village NextVillage;
+        String VillageName;
+        bool isAstrildeHere = false;
+        public  Village() { }
     }
 
 }
