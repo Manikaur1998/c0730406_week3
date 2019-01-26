@@ -9,7 +9,20 @@ namespace c0730406_week3
     class Program
     {
         static void Main(string[] args)
+
+
+
+
+            
         {
+
         }
     }
+
+    class Node
+    {
+        Node PreviousNode;
+        Node NextNode;
+    }
+
 }
