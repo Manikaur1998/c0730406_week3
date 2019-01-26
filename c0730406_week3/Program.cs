@@ -19,10 +19,14 @@ namespace c0730406_week3
         }
     }
 
-    class Node
+    class Countryside
     {
-        Node PreviousNode;
-        Node NextNode;
+
+    }
+    class Village
+    {
+        Village Previosvillage;
+        Village NextVillage;
     }
 
 }
