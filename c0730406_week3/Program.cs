@@ -21,14 +21,47 @@ namespace c0730406_week3
 
     class Countryside
     {
+        Village Alst;
+        Village Mealand;
+        Village Schenig;
 
+        public void InstialltizeMap()
+        {
+             Alst = new Village();
+            Alst.VillageName = "Alst";
+             Mealand = new Village();
+            Mealand.VillageName = "Mealand";
+            Mealand.isAstrildeHere = true;
+            Schenig = new Village();
+            Schenig.VillageName = "Schenig";
+
+            Alst.NextVillage = Mealand;
+            Mealand.NextVillage = Schenig;
+            Schenig.NextVillage = Alst;
+
+        }
+        public void FindAstrilde()
+        { 
+           Village CurrentVillage = this.Mealand;
+          if   (CurrentVillage.isAstrildeHere)
+            {
+                Console.WriteLine("Hugi Found Astride !!!Celebrations!XOXO");
+            }
+           Village NextVillage;
+
+            NextVillage = CurrentVillage.NextVillage;
+           
+        
+        
+        
     }
     class Village
     {
-        Village PreviosVillage;
-        Village NextVillage;
-        String VillageName;
-        bool isAstrildeHere = false;
+       
+       public Village PreviosVillage;
+        public Village NextVillage;
+        public String VillageName;
+         public bool isAstrildeHere = false;
         public  Village() { }
 
     }
