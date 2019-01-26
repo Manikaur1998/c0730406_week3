@@ -30,6 +30,10 @@ namespace c0730406_week3
         String VillageName;
         bool isAstrildeHere = false;
         public  Village() { }
+
     }
+
+ 
+
 
 }
